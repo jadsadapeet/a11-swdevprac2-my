@@ -1,0 +1,46 @@
+/* src/app/components/banner.module.css */
+
+.banner {
+  /* กำหนดให้ container เป็น relative เพื่อรองรับภาพแบบ fill */
+  position: relative;
+  width: 100%;
+  height: 400px;
+  
+  /* จัดการตำแหน่งข้อความให้อยู่ตรงกลาง */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  color: white;
+  text-align: center;
+  overflow: hidden; /* ป้องกันไม่ให้รูปภาพล้นขอบ */
+}
+
+/* สไตล์สำหรับจัดการรูปภาพใน Component <Image> */
+.bannerImage {
+  object-fit: cover;
+  z-index: -1; /* ดึงรูปภาพไปไว้ด้านหลังข้อความ */
+  filter: brightness(0.6); /* ปรับความสว่างของรูปให้มืดลงเล็กน้อย เพื่อให้อ่านข้อความได้ชัดเจน */
+}
+
+/* สไตล์สำหรับครอบข้อความ */
+.contentWrapper {
+  position: relative;
+  z-index: 1; /* ดึงข้อความให้อยู่ด้านหน้าสุด */
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
