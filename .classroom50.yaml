@@ -1,0 +1,13 @@
+schema: "classroom50/repo-config/v1"
+classroom: "swdevprac2-69-1"
+assignment: "a11-swdevprac2-69-1"
+secret: "cf2djm54"
+owner:
+  username: "jadsadapeet"
+  id: 88246654
+  accepted_at: "2026-10-22T08:44:15Z"
+source:
+  owner: "SWDevPrac2-69-1"
+  owner_id: 312147402
+  repo: "2110507_a11_starter"
+  branch: "main"
